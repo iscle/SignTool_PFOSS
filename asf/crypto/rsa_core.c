@@ -1,5 +1,9 @@
 #include <string.h>
+#if defined(__MACH__)
+#include <stdlib.h>
+#else
 #include <malloc.h>
+#endif
 #include "rsa_def.h"
 #include "bgn_internal.h"
 
